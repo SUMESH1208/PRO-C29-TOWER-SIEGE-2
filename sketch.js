@@ -45,6 +45,16 @@ function setup() {
   
   block16 = new Block(390,155,30,40);
 
+  blocks1 = new Block(640,175,30,40); 
+  blocks2 = new Block(670,175,30,40);
+   blocks3 = new Block(700,175,30,40); 
+   blocks4 = new Block(730,175,30,40); 
+   blocks5 = new Block(760,175,30,40); 
+    blocks6 = new Block(670,135,30,40);
+     blocks7 = new Block(700,135,30,40); 
+     blocks8 = new Block(730,135,30,40); 
+     blocks9 = new Block(700,95,30,40);
+
   slingshot = new Slingshot(ball.body,{x:200, y:200});
 
 
@@ -61,6 +71,7 @@ function draw() {
 
   ground.display();
   stand1.display();
+  stand2.display();
   
   strokeWeight(2);
   stroke(15);
@@ -85,6 +96,20 @@ function draw() {
   block15.display();
   fill("grey");
   block16.display();
+  fill("pink");
+  blocks1.display();
+  blocks2.display();
+  blocks3.display();
+  blocks4.display();
+  blocks5.display();
+  fill("turquoise");
+  blocks6.display();
+  blocks7.display();
+  
+  
+  fill("pink");
+  block8.display();
+  block9.display();
   
   ball.display();
   slingshot.display(); 
@@ -101,6 +126,8 @@ function mouseDragged(){
 function mouseReleased(){
   slingshot.fly();
 }
+
+
 
 function keyPressed(){
   if(keyCode === 32){
